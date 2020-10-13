@@ -54,7 +54,7 @@ settingBox.onmouseover = function()
 settingBox.onmouseleave = function(){
   let box = this;
   setTimeout(function(){
-    box.style.left = "-35px";
+    box.style.left = "-45px";
   },500);
 }
 
