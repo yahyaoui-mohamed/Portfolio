@@ -56,7 +56,7 @@ this.onscroll = function()
 
 
 
-settingIcon.onmouseover = function()
+settingIcon.onclick = function()
 {
   this.style.left = "-32px";
   setTimeout(function(){
