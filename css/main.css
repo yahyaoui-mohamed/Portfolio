@@ -27,9 +27,12 @@ body,html{
 .title{
   position:relative;
   display:inline-block;
+  border:5px solid #fff;
+  color:#fff;
+  padding:10px 25px
 }
 
-.title:after{
+/*.title:after{
   position:absolute;
   content:"";
   width:80%;
@@ -38,7 +41,7 @@ body,html{
   top:43px;
   left:50%;
   transform:translateX(-50%);
-}
+}*/
 
 .top{
   position:fixed;
@@ -272,6 +275,102 @@ border-radius:50px;
 .setting-box ul li:last-child{
   background-color:#4caf50;
 }
+
+.about{
+   background-color:var(--color);
+   overflow:hidden;
+   padding-right:40px;
+   padding-left:40px;
+}
+
+.about > p{
+  color:#eee;
+  margin-bottom:30px;
+  font-size:14px;
+}
+
+.about .card{
+  background-color:#fff;
+  width:30%;
+  float:left;
+  padding:30px 20px;
+  border-radius:8px;
+}
+
+.about .card h3{
+  margin:10px 0;
+  font-weight:800;
+}
+
+.about .card span{
+  font-size: 12px;
+  color:#eee;
+  display:inline-block;
+}
+
+.about .card img{
+  max-width:100px;
+  border-radius:50%;
+}
+
+.about .card .social-icons a{
+  background-color:var(--color);
+  width:40px;
+  height:40px;
+  display:inline-block;
+  border-radius:50%;
+  text-align:center;
+  line-height:40px;
+  margin:20px 10px;
+}
+
+.about .card .social-icons a i{
+  font-size:17px;
+  color:#fff;
+}
+
+.about .card .social-icons a:hover i.fa-linkedin-in{
+  color:#2867B2;
+}
+
+.about .card .social-icons a:hover i.fa-github{
+  color:#1b1f23;
+}
+
+.about .card .social-icons a:hover, i.fa-facebook-f{
+  color:#3c5a99;
+}
+
+.about .about-content{
+  width:68%;
+  float:right;
+  text-align:left;
+  padding:20px;
+  border:5px solid #fff;
+  margin:2px
+}
+
+.about .about-content .content-wrap{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.about .about-content .content-wrap .content{
+  width:50%;
+  margin-bottom:50px;
+  color:#fff;
+}
+
+.about .about-content .content-wrap .content i{
+  color:#fff;
+  margin-right:10px;
+}
+
+.about .about-content .content-wrap .content span.content-title{
+  font-weight:600;
+}
+
+/* Animation */
 
 @keyframes slide{
   0%{
