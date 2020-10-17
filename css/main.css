@@ -278,7 +278,6 @@ border-radius:50px;
 
 .about{
    background-color:var(--color);
-   overflow:hidden;
    padding-right:40px;
    padding-left:40px;
 }
@@ -297,23 +296,23 @@ border-radius:50px;
   border-radius:8px;
 }
 
-.about .card h3{
+.about .about-content .card h3{
   margin:10px 0;
   font-weight:800;
 }
 
-.about .card span{
+.about .about-content .card span{
   font-size: 12px;
   color:#eee;
   display:inline-block;
 }
 
-.about .card img{
+.about .about-content .card img{
   max-width:100px;
   border-radius:50%;
 }
 
-.about .card .social-icons a{
+.about .about-content .card .social-icons a{
   background-color:var(--color);
   width:40px;
   height:40px;
@@ -324,35 +323,36 @@ border-radius:50px;
   margin:20px 10px;
 }
 
-.about .card .social-icons a i{
+.about .about-content .card .social-icons a i{
   font-size:17px;
   color:#fff;
 }
 
-.about .card .social-icons a:hover i.fa-linkedin-in{
+.about .about-content .card .social-icons a:hover i.fa-linkedin-in{
   color:#2867B2;
 }
 
-.about .card .social-icons a:hover i.fa-github{
+.about .about-content .card .social-icons a:hover i.fa-github{
   color:#1b1f23;
 }
 
-.about .card .social-icons a:hover, i.fa-facebook-f{
+.about .about-content .card .social-icons a:hover, i.fa-facebook-f{
   color:#3c5a99;
 }
 
 .about .about-content{
+   overflow:hidden;
+}
+
+.about .about-content .content-wrap{
+  display:flex;
+  flex-wrap:wrap;
   width:68%;
   float:right;
   text-align:left;
   padding:43px;
   border:5px solid #fff;
   margin:2px;
-}
-
-.about .about-content .content-wrap{
-  display:flex;
-  flex-wrap:wrap;
 }
 
 .about .about-content .content-wrap .content{
@@ -370,6 +370,46 @@ border-radius:50px;
   font-weight:600;
 }
 
+.about .services{
+  overflow:hidden;
+  margin:50px auto;
+}
+
+.about .services .service{
+  float:left;
+  width:30%;
+  margin-right:40px;
+  background-color:#fff;
+  margin-bottom: 20px;
+  padding:70px 40px;
+  border-radius:5px;
+}
+
+.about .services .service i{
+  background-color:#eee;
+  color:var(--color);
+  border-radius:50%;
+  font-size:30px;
+  width:80px;
+  height:80px;
+  line-height:80px;
+  transition:.5s
+}
+
+.about .services .service h3{
+  color:#222;
+}
+
+.about .services .service p{
+color:#444;
+font-size:14px;
+line-height:24px;
+}
+
+.about .services .service:hover i{
+  color:#fff;
+  background-color:var(--color);
+}
 /* Animation */
 
 @keyframes slide{
