@@ -413,3 +413,13 @@ border-radius:50px;
     background-color: #fff;
   }
 }
+
+::-webkit-scrollbar-thumb {
+  background: var(--color); 
+  border:1px solid #fff;
+}
+
+::-webkit-scrollbar {
+  width:20px;
+  opacity:0;
+}

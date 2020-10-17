@@ -83,3 +83,8 @@ settingBox.querySelectorAll("ul li").forEach(item => {
     document.documentElement.style.setProperty("--color",this.dataset.color);
   }
 });
+
+this.onscroll = function()
+{
+  document.body.classList.add("scroll");
+}
