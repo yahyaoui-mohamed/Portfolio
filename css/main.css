@@ -303,7 +303,7 @@ border-radius:50px;
 
 .about .about-content .card span{
   font-size: 12px;
-  color:#eee;
+  color:#cacaca;
   display:inline-block;
 }
 
@@ -313,7 +313,7 @@ border-radius:50px;
 }
 
 .about .about-content .card .social-icons a{
-  background-color:var(--color);
+  background-color:#eee;
   width:40px;
   height:40px;
   display:inline-block;
@@ -321,24 +321,21 @@ border-radius:50px;
   text-align:center;
   line-height:40px;
   margin:20px 10px;
+  transition:.5s;
 }
 
+.about .about-content .card .social-icons a:hover{
+  background-color:var(--color)
+}
 .about .about-content .card .social-icons a i{
   font-size:17px;
+  color:var(--color);
+}
+
+.about .about-content .card .social-icons a:hover i{
   color:#fff;
 }
 
-.about .about-content .card .social-icons a:hover i.fa-linkedin-in{
-  color:#2867B2;
-}
-
-.about .about-content .card .social-icons a:hover i.fa-github{
-  color:#1b1f23;
-}
-
-.about .about-content .card .social-icons a:hover, i.fa-facebook-f{
-  color:#3c5a99;
-}
 
 .about .about-content{
    overflow:hidden;
@@ -410,6 +407,47 @@ line-height:24px;
   color:#fff;
   background-color:var(--color);
 }
+
+.skills{
+  background-color:#eee;
+}
+
+.skills .title{
+  border-color:var(--color);
+  color:var(--color);
+}
+
+.skills p{
+  color:#444;
+  font-size:14px;
+  line-height:24px;
+  margin-bottom:50px;
+}
+
+.skills .progress{
+display:flex;
+flex-wrap: wrap;
+}
+
+.skills .progress .progress-bar{
+  background-color:#ccc;
+  width:41%;
+  margin:0 50px;
+  position:relative;
+  margin-bottom:50px;
+  height:19px
+}
+
+.skills .progress .progress-bar:after{
+  content:"";
+  position:absolute;
+  width:10%;
+  height:100%;
+  top:0;
+  left:0;
+  background-color:var(--color);
+}
+
 /* Animation */
 
 @keyframes slide{
